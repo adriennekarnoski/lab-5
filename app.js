@@ -107,7 +107,10 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
+  var result = multiply(2, 3)[0] + multiply(4, null)[0];
+  var message = 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + result;
 
+  return [result, message];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
